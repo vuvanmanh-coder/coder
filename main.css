@@ -1,0 +1,137 @@
+.abs-right{
+    position: absolute;
+    right: 5px ;
+    top: 60px;
+    width: 100px;
+}
+*{
+    color: black;
+}
+    
+html{
+        color:yellowgreen;
+    }
+#second-heading{
+    color: rgb(255, 0, 208);
+
+}
+button{
+    color: blueviolet;
+}
+:root{
+    --mau-color: red;
+}
+.bieudo {
+    background-color: aliceblue;
+    margin: 30px auto 0  auto;
+    height: 500px;
+    display: flex;  
+    justify-content: space-around;
+    
+    
+
+}
+.bieudo_hinhcot {
+    align-self: flex-end; /*align-items: flex-end; /*flex-wrap: wrap-reverse;giong nhau nhung 2 cai nay o lenh me */
+    width: 100px;
+    height: var(--saocungdk);
+    color: black;
+    text-align: center;
+    background-color: brown;
+    animation: moveRight 2s linear infinite alternate;
+    
+}
+@keyframes moveRight {
+    from {
+        opacity: 0; /*do trong suot*/
+        transform: translateX(0); /*height: calc( var(--saocungdk) - 50%);*/
+    }
+    to {
+        opacity: 1;
+         transform: translateX(300px);/*height: calc(var(--saocungdk));*/
+    }
+}
+ .dacnhan{
+    margin: 30px auto 20px auto;
+    text-align: center; /*chu nam o trung tam*/
+    max-width: 1000px;
+    min-height: 250px;
+    background-color: aliceblue;
+    background-position: center;
+    
+    display: flex;
+ }
+ .dacnhan1{
+   background-color: blue;
+   flex: 1; 
+}
+ .tam{
+   flex: 1;
+   display: flex;
+   flex-direction: column-reverse; /*chu nam ngang*/
+ }
+ .tam1{
+    background-color: blueviolet;
+    flex: 1;
+ }
+ .tam2{
+    background-color: red;
+    flex: 1;
+ }
+ 
+ .block{
+    display: inline-block;
+    text-decoration: none;/*lam mat dau gack ngang duoi chan*/
+    background-color: transparent;/*mau trog suot*/
+    border: none;
+    outline: none;/*xoa vien ngoai cua inp hoac button*/
+    padding: 12px 48px;
+    color: #fff;
+    border-radius: 50px ;/*lam vien ngoai no tron lai*/
+    cursor: pointer;/*di chuot vao thi hien ban tay*/
+    transition: opacity .3 ease;
+    min-width: 120px;
+
+ }
+ .block:hover{
+    opacity: 0.7;/*di chuot vao thi lam mo mau*/
+ }
+ .block + .block{
+    margin-left: 15px;
+ }
+ .block--ok{
+    background-color: #71be34;
+    padding: 8px 56px;
+
+ }
+ .block--cahbao{
+    background-color: #ffb702;
+    padding: 8px 56px;
+
+ }
+ .block--kdk{
+    background-color: #ff623d;
+    padding: 8px 56px;
+}
+.block--disabled {
+    opacity: 0.5 !important ;/*0.7 lon hon nen dung important*/
+    cursor: default;/*xoa ban tay khi di chuyen vai*/
+}
+.toast{
+
+}
+.toast__icon{
+
+}
+.toast__body{
+
+}
+.toast__title{
+
+}
+.toast__msg{
+
+}
+.toast__close{
+    
+}
